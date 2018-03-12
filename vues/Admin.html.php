@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <title>Admin du site</title>
 </head>
 <body>
@@ -29,6 +30,26 @@
             <hr>
             <?php
         }
+=======
+    <title><?= $article['admin'] ?></title>
+</head>
+<body>
+<h1><?= $article['admin'] ?></h1>
+<div id="contenu">
+    <h2><?= $article['admin'] ?></h2>
+    <p><button onclick="document.location='./'">BACK</button></p>
+    <?php
+
+    // pas d'articles
+    if ($article == false) {
+        echo "<h2>Cet article n'existe plus</h2>";
+    } else {
+        ?>
+        <p><?= nl2br($article['texte']) ?></p>
+        <p><?= $article['publie'] ?></p>
+        <hr>
+        <?php
+>>>>>>> 234990fd959c3f5bcbf78cc200fa568444c7e6d1
     }
     ?>
 </div>
