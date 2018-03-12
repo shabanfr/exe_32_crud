@@ -19,4 +19,4 @@ if($idarti===0){
 $article = listeArtiComplet($mysqli,$idarti);
 
 // on prend la vue
-require_once "vues/Admin.html.php";
+require_once "vues/Article.html.php";

@@ -4,7 +4,7 @@
  */
 
 // appel du fichier de configuration
-require_once "mysqliconfig.php";?
+require_once "mysqliconfig.php";
 
 // appel du modèle contenant une connexion mysql nécessaire à toutes les pages => $mysqli
 require_once "modeles/mysqliconnect.php";
@@ -22,4 +22,3 @@ if(empty($_GET)){
 }else{
     require_once "controller/AccueilController.php";
 }
-ok
